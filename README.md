@@ -3,7 +3,10 @@
 post installation actions after installing manjaro kde in a Gigabyte P34G v2 i7 GTX860m laptop
 
 ## install
-install went well
+install went well, restarted nicely on fresh system.
+But things went wrong when i had to update the 564 packages out of date
+my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso
+there were a lot of changes, particularly on graphic card drivers, here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0
 
 ## data
 edit /etc/fstab to mount /dev/sda4 on /mnt/data on startup
@@ -14,12 +17,9 @@ setup a gpg encripting key to be able to use kwallet
 https://wiki.archlinux.org/index.php/GnuPG
 
 ## basique softwares
-```
-sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion 
-```
-```
-yaourt -S retext python-markdown
-```
+```sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
+```yaourt -S retext python-markdown```
+
 ## keyboard
 https://wiki.archlinux.org/index.php/Apple_Keyboard
 https://wiki.manjaro.org/index.php/Keyboard_Layout
@@ -31,9 +31,13 @@ i hope this won't happen again
 
 https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation
 
+```sudo pacman -S kcm-touchpad```
+
 
 ## bluetooth
 ... bluez ...
+
+
 
 ## konsole
 http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
@@ -53,13 +57,15 @@ https://wiki.archlinux.org/index.php/LAMP
 ### Apache
 ```sudo pacman -S apache```
 then configure root/directory, vhosts, etc
-don't foret to activate url rewriting in http.conf (for drupal for instance)
+/!\ don't foret to activate url rewriting in http.conf (for drupal for instance)
 ```LoadModule rewrite_module modules/mod_rewrite.so```
 
 ### PHP
 ```sudo pacman -S php php-apache```
 had to edit /etc/php/php.ini to add my specifique root directory in open_base_dir
 http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3F#gs
+```sudo pacman -S php-gd php-pear php-mcrypt php-apcu```
+
 
 ### Mysql
 dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me
@@ -75,6 +81,11 @@ https://wiki.archlinux.org/index.php/Drupal
 
 ## drush
 ```yaourt -S drush```
+disable php options safe_mode, open_basedir, etc with /etc/drush/drush.ini
+```
+sudo chown -R root:users /usr/lib/drush
+sudo chmod -R g+w /usr/lib/drush  
+```
 
 ## haroopad
 ```yaourt -s haroopad```
