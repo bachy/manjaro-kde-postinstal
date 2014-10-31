@@ -33,17 +33,18 @@ https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation
 
 ```sudo pacman -S kcm-touchpad```
 
-
 ## bluetooth
-... bluez ...
-
-
+... sudo pacman -S bluedevil1 ...
 
 ## konsole
 http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
 
 ## vim
 https://wiki.archlinux.org/index.php/Vim/.vimrc
+
+## nvidia gpu
+```sudo systemctl enable bumblebee```
+https://wiki.archlinux.org/index.php/Bumblebee
 
 ## owncloud
 ```yaourt -S owncloud-client```
@@ -98,3 +99,5 @@ then install package control
 ```yaourt -S backintime-kde4```
 then configure backups
 
+## notes
+http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
