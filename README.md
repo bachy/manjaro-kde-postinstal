@@ -3,10 +3,16 @@
 post installation actions after installing manjaro kde in a Gigabyte P34G v2 i7 GTX860m laptop
 
 ## install
-install went well, restarted nicely on fresh system.
-But things went wrong when i had to update the 564 packages out of date
-my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso
-there were a lot of changes, particularly on graphic card drivers, here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0
+install went well, restarted nicely on fresh system.  
+But things went wrong when i had to update the 564 packages out of date  
+my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso  
+there were a lot of changes, particularly on graphic card drivers  
+here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0 
+
+## update
+```sudo pacman -S pacman```  
+```sudo pacman -S manjaro-system```  
+```sudo pacman -Syu```  
 
 ## data
 edit /etc/fstab to mount /dev/sda4 on /mnt/data on startup
@@ -104,33 +110,33 @@ http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
 http://forum.notebookreview.com/gigabyte/746798-gigabyte-p34g-linux.html
 
 ## misc
-autojump
-boabab
-basket ??
-cgit
-choqok
-clamav
-clonezilla
-deja-dup
-emerillon
-fdupes
-filezilla
-fontforge
-grsync
-httperf
-innotop
-keepass
-keepnote
-krename
-ksshaskpass
-powertop
-rsnapshot
-skrooge
-smb4k
-spectrwm
-subtle
-syncthing
-tig
-xdebug
-xtrabackup
-zim
+autojump  
+boabab  
+basket ??  
+cgit  
+choqok  
+clamav  
+clonezilla  
+deja-dup  
+emerillon  
+fdupes  
+filezilla  
+fontforge  
+grsync  
+httperf  
+innotop  
+keepass  
+keepnote  
+krename  
+ksshaskpass  
+powertop  
+rsnapshot  
+skrooge  
+smb4k  
+spectrwm  
+subtle  
+syncthing  
+tig  
+xdebug  
+xtrabackup  
+zim  
