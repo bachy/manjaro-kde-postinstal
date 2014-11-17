@@ -101,3 +101,36 @@ then configure backups
 
 ## notes
 http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
+http://forum.notebookreview.com/gigabyte/746798-gigabyte-p34g-linux.html
+
+## misc
+autojump
+boabab
+basket ??
+cgit
+choqok
+clamav
+clonezilla
+deja-dup
+emerillon
+fdupes
+filezilla
+fontforge
+grsync
+httperf
+innotop
+keepass
+keepnote
+krename
+ksshaskpass
+powertop
+rsnapshot
+skrooge
+smb4k
+spectrwm
+subtle
+syncthing
+tig
+xdebug
+xtrabackup
+zim
