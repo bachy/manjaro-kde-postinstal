@@ -7,7 +7,7 @@ install went well, restarted nicely on fresh system.
 But things went wrong when i had to update the 564 packages out of date  
 my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso  
 there were a lot of changes, particularly on graphic card drivers  
-here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0 
+here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0  
 
 ## update
 ```sudo pacman -S pacman```  
