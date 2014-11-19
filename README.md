@@ -23,8 +23,8 @@ setup a gpg encripting key to be able to use kwallet
 https://wiki.archlinux.org/index.php/GnuPG
 
 ## basique softwares
-```sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
-```yaourt -S retext python-markdown```
+```sudo pacman -S vim kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```  
+```yaourt -S retext python-markdown```  
 
 ## keyboard
 https://wiki.archlinux.org/index.php/Apple_Keyboard
