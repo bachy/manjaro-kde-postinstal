@@ -101,8 +101,8 @@ sudo chmod -R g+w /usr/lib/drush
 ```yaourt -S sublime-text-dev```
 then install package control
 
-## backitime
-i had to edit the build config file to avoid conflit with backintime-gnome and backintime-gtk
+## backintime
+i had to edit the build config file to avoid conflit with backintime-gnome and backintime-gtk    
 ```yaourt -S backintime-kde4```
 then configure backups
 
