@@ -58,6 +58,11 @@ https://wiki.archlinux.org/index.php/Bumblebee
 ## dropbox
 ```yaourt -S dropbox```
 
+## udevil
+automount external usb storage    
+https://wiki.archlinux.org/index.php/Udisks#Mount_helpers    
+https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia    
+
 ## LAMP
 https://wiki.archlinux.org/index.php/LAMP
 
