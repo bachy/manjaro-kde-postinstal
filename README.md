@@ -25,7 +25,6 @@ https://wiki.archlinux.org/index.php/GnuPG
 
 ## basique softwares
 ```sudo pacman -S gvim kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
-```yaourt -S retext python-markdown```
 
 ## keyboard
 https://wiki.archlinux.org/index.php/Apple_Keyboard
@@ -70,32 +69,24 @@ https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia
 https://wiki.archlinux.org/index.php/LAMP
 
 ### Apache
-```sudo pacman -S apache```
-then configure root/directory, vhosts, etc
-/!\ don't forget to activate url rewriting in http.conf (for drupal for instance)
-```LoadModule rewrite_module modules/mod_rewrite.so```
-TODO add my apache conf file here
+```sudo pacman -S apache```     
+then configure root/directory, vhosts, etc       
+/!\ don't forget to activate url rewriting in http.conf (for drupal for instance)      
+```LoadModule rewrite_module modules/mod_rewrite.so```      
+TODO add my apache conf file here      
 
 ### PHP
-```sudo pacman -S php php-apache```
-had to edit /etc/php/php.ini to add my specifique root directory in open_base_dir
-http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3F#gs
+```sudo pacman -S php php-apache```       
+had to edit /etc/php/php.ini to add my specifique root directory in open_base_dir      
+http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3F#gs         
 ```sudo pacman -S php-gd php-pear php-mcrypt php-apcu```
 
 
 ### Mysql
-Mysql is already installed with KDE (used by akonady server)
-
-
-dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me
-
-
-install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin
-
-
-mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
-
-
+Mysql is already installed with KDE (used by akonady server)       
+dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me        
+install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin      
+mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs        
 edit the max_allowed_packet property to avoid the 2006 error
 
 ### mysql backup cron
@@ -113,9 +104,9 @@ sudo chmod -R g+w /usr/lib/drush
 ```
 
 ## Markdown
-```yaourt -s haroopad```
-```yaourt -s retext```
-```yaourt -s remarkable```
+```yaourt -s haroopad```      
+```yaourt -S retext python-markdown```     
+```yaourt -s remarkable```        
 
 ## sublimetext 3 (dev)
 ```yaourt -S sublime-text-dev```
