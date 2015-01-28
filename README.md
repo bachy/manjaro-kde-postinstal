@@ -3,11 +3,12 @@
 post installation actions after installing manjaro kde in a Gigabyte P34G v2 i7 GTX860m laptop
 
 ## install
-install went well, restarted nicely on fresh system.
+install went well, restarted nicely on fresh system.   
 But things went wrong when i had to update the 564 packages out of date
 my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso
-there were a lot of changes, particularly on graphic card drivers
-here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0
+there were a lot of changes, particularly on graphic card drivers    
+here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0    
+i had a new problem with GPU drivers after system update :( https://forum.manjaro.org/index.php?topic=19941.0
 
 ## update
 ```sudo pacman -S pacman```
@@ -37,9 +38,11 @@ i hope this won't happen again
 
 https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation
 
+manage your touchpad from kde
 ```sudo pacman -S kcm-touchpad```
 
 ## bluetooth
+manage your bluetooth devices from kde
 ... sudo pacman -S bluedevil ...
 
 ## konsole
@@ -59,9 +62,9 @@ https://wiki.archlinux.org/index.php/Bumblebee
 ```yaourt -S dropbox```
 
 ## udevil
-automount external usb storage
-https://wiki.archlinux.org/index.php/Udisks#Mount_helpers
-https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia
+automount external usb storage   
+https://wiki.archlinux.org/index.php/Udisks#Mount_helpers   
+https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia    
 
 ## LAMP
 https://wiki.archlinux.org/index.php/LAMP
@@ -109,8 +112,10 @@ sudo chown -R root:users /usr/lib/drush
 sudo chmod -R g+w /usr/lib/drush
 ```
 
-## haroopad
+## Markdown
 ```yaourt -s haroopad```
+```yaourt -s retext```
+```yaourt -s remarkable```
 
 ## sublimetext 3 (dev)
 ```yaourt -S sublime-text-dev```
