@@ -31,13 +31,11 @@ https://wiki.archlinux.org/index.php/Apple_Keyboard
 https://wiki.manjaro.org/index.php/Keyboard_Layout
 
 ## touchpad
-I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...
-but after a real shutdown and wait some minutes then restart the computer, it was finally here
-i hope this won't happen again
+I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...       
+but after a real shutdown, unpleged power and wait for more than 60 seconds then restart the computer, it was finally back      
+https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation       
 
-https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation
-
-manage your touchpad from kde
+manage your touchpad from kde      
 ```sudo pacman -S kcm-touchpad```
 
 ## bluetooth
