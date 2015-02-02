@@ -15,20 +15,26 @@ i had a new problem with GPU drivers after system update :( https://forum.manjar
 ```sudo pacman -S manjaro-system```
 ```sudo pacman -Syu```
 
-## data
-edit /etc/fstab to mount /dev/sda4 on /mnt/data on startup
-replace all home folders with aliases pointing to /mnt/data/bachir/*
-
 ## gpg encrypting key
 setup a gpg encripting key to be able to use kwallet
 https://wiki.archlinux.org/index.php/GnuPG
 
-## basique softwares
-```sudo pacman -S gvim kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
+## Yaourt
+ask for editing config file before build
+```echo "EDITFILES=1" >> ~/.yaourtrc```
 
-## keyboard
-https://wiki.archlinux.org/index.php/Apple_Keyboard
-https://wiki.manjaro.org/index.php/Keyboard_Layout
+## console
+### terminator
+```sudo pacman -S terminator```
+### konsole
+http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
+
+## vim
+```sudo pacman -S gvim```
+https://wiki.archlinux.org/index.php/Vim/.vimrc
+
+## basique softwares
+```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
 
 ## touchpad
 I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...       
@@ -41,12 +47,6 @@ manage your touchpad from kde
 ## bluetooth
 manage your bluetooth devices from kde
 ... sudo pacman -S bluedevil ...
-
-## konsole
-http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
-
-## vim
-https://wiki.archlinux.org/index.php/Vim/.vimrc
 
 ## nvidia gpu
 ```sudo systemctl enable bumblebee```
