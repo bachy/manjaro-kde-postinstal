@@ -65,10 +65,10 @@ https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia
 
 ```sudo pacman -S udevil davfs2```
 
-```sudo cat '# UDISKS_FILESYSTEM_SHARED
-# ==1: mount filesystem to a shared directory (/media/VolumeName)
-# ==0: mount filesystem to a private directory (/run/media/$USER/VolumeName)
-# See udisks(8)
+```sudo cat '# UDISKS_FILESYSTEM_SHARED    
+ # ==1: mount filesystem to a shared directory (/media/VolumeName)    
+ # ==0: mount filesystem to a private directory (/run/media/$USER/VolumeName)    
+ # See udisks(8)     
 ENV{ID_FS_USAGE}=="filesystem|other|crypto", ENV{UDISKS_FILESYSTEM_SHARED}="1"' >> /etc/udev/rules.d/99-udisks2.rules```
 
 then add devmon to autostart on kde system settings
