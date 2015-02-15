@@ -48,6 +48,14 @@ manage your touchpad from kde
 manage your bluetooth devices from kde
 ... sudo pacman -S bluedevil ...
 
+## apple magicmouse
+http://askubuntu.com/questions/261791/how-to-set-the-scroll-speed-of-apple-magic-mouse
+```
+sudo rmmod hid_magicmouse
+cat 'options hid_magicmouse scroll-speed=55 scroll-acceleration=1 emulate_2button=1 emulate_3button=1' > /etc/modprobe.d/magicmouse.conf
+sudo modprobe hid_magicmouse
+```
+
 ## nvidia gpu
 ```sudo systemctl enable bumblebee```
 https://wiki.archlinux.org/index.php/Bumblebee
@@ -122,8 +130,14 @@ then install package control
 
 ## backintime
 i had to edit the build config file to avoid conflit with backintime-gnome and backintime-gtk
-```yaourt -S backintime-kde4```
+```yaourt -S backintime```
 then configure backups
+
+## Openvpn
+```
+sudo pacman -S openvpn networkmanager-openvpn
+sudo systemctl restart NetworkManager
+```
 
 ## notes
 http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
