@@ -29,6 +29,12 @@ ask for editing config file before build
 ### konsole
 http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
 
+## Bash tricks
+```
+echo 'set show-all-if-ambiguous on' >> ~/.inputrc
+echo 'set completion-ignore-case on' >> ~/.inputrc
+```
+
 ## vim
 ```sudo pacman -S gvim```
 https://wiki.archlinux.org/index.php/Vim/.vimrc
