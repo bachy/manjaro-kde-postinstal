@@ -109,7 +109,7 @@ Mysql is already installed with KDE (used by akonady server)
 dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me        
 install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin      
 mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs        
-edit the max_allowed_packet property to avoid the 2006 error
+on /etc/mysql/my.conf edit the max_allowed_packet property to avoid the 2006 error and comment the log-bin=mysql-bin
 
 ### mysql backup cron
 TODO
@@ -150,6 +150,7 @@ http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
 http://forum.notebookreview.com/gigabyte/746798-gigabyte-p34g-linux.html
 
 ## misc
+kdeplasma-applets-playbar (to control banshee through mrpis2 commands)
 autojump
 boabab
 basket ??
