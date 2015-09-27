@@ -35,6 +35,13 @@ echo 'set show-all-if-ambiguous on' >> ~/.inputrc
 echo 'set completion-ignore-case on' >> ~/.inputrc
 ```
 
+## Git completion
+```
+sudo pacman -S bash-completion
+sudo wget -O /etc/bash_completion.d/git-completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+```
+
+
 ## vim
 ```sudo pacman -S gvim```
 https://wiki.archlinux.org/index.php/Vim/.vimrc
