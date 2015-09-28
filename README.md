@@ -13,7 +13,7 @@ i had a new problem with GPU drivers after system update :( https://forum.manjar
 ## update
 ```sudo pacman -S pacman```
 ```sudo pacman -S manjaro-system```
-```sudo pacman -Syu```
+```sudo pacman -Syyu```
 
 ## gpg encrypting key
 setup a gpg encripting key to be able to use kwallet
@@ -41,13 +41,12 @@ sudo pacman -S bash-completion
 sudo wget -O /etc/bash_completion.d/git-completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 ```
 
-
 ## vim
 ```sudo pacman -S gvim```
 https://wiki.archlinux.org/index.php/Vim/.vimrc
 
 ## basique softwares
-```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla bash-completion htop```
+```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist bash-completion htop```
 
 ## touchpad
 I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...       
@@ -114,6 +113,7 @@ http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3
 ### Mysql
 Mysql is already installed with KDE (used by akonady server)       
 dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me        
+https://wiki.archlinux.org/index.php/MySQL
 install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin      
 mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs        
 on /etc/mysql/my.conf edit the max_allowed_packet property to avoid the 2006 error and comment the log-bin=mysql-bin
@@ -141,6 +141,11 @@ sudo chmod -R g+w /usr/lib/drush
 ```yaourt -S sublime-text-dev```
 then install package control
 
+## atom-editor
+```
+yaourt -S atom-editor
+```
+
 ## backintime
 i had to edit the build config file to avoid conflit with backintime-gnome and backintime-gtk
 ```yaourt -S backintime```
@@ -152,38 +157,59 @@ sudo pacman -S openvpn networkmanager-openvpn
 sudo systemctl restart NetworkManager
 ```
 
+## TLP (laptop power management)
+disable wifi and bluetooth on startup on battery   
+https://wiki.archlinux.org/index.php/TLP#Configuration
+
+## syncthing
+```
+sudo pacman -S syncthing syncthing-gtk
+```
+### keepass
+to keep all your passwords safe and share your liste with all your devices through syncthing
+```
+sudo pacman -S keepass
+```
+
+
+## filezilla
+i share filezilla sites librarie with owncloud
+```
+sudo pacman -S filezilla
+```
+
+## boabab
+you can use ```du``` to display folder size or you can use baobab
+```
+sudo pacman -S baobab
+```
+
 ## notes
 http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
 http://forum.notebookreview.com/gigabyte/746798-gigabyte-p34g-linux.html
 
 ## misc
-kdeplasma-applets-playbar (to control banshee through mrpis2 commands)
 autojump
-boabab
 basket ??
 cgit
-choqok
+choqok for twitter
 clamav
 clonezilla
 deja-dup
 emerillon
 fdupes
-filezilla
 fontforge
 grsync
 httperf
 innotop
-keepass
 keepnote
 krename
 ksshaskpass
-powertop
 rsnapshot
 skrooge
 smb4k
 spectrwm
 subtle
-syncthing
 tig
 xdebug
 xtrabackup
