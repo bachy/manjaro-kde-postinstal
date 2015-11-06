@@ -46,7 +46,7 @@ sudo wget -O /etc/bash_completion.d/git-completion.bash https://github.com/git/g
 https://wiki.archlinux.org/index.php/Vim/.vimrc
 
 ## basique softwares
-```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist bash-completion htop```
+```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist bash-completion htop knockd```
 
 ## touchpad
 I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...       
@@ -78,12 +78,11 @@ https://wiki.archlinux.org/index.php/Bumblebee
 ## dropbox
 ```yaourt -S dropbox```
 
-## udevil
-automount external usb storage   
+## automount external usb storage   
 https://wiki.archlinux.org/index.php/Udisks#Mount_helpers   
 https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia    
 
-```sudo pacman -S udevil davfs2```
+```sudo pacman -S udevil```
 
 ```sudo cat '# UDISKS_FILESYSTEM_SHARED    
  # ==1: mount filesystem to a shared directory (/media/VolumeName)    
@@ -92,6 +91,14 @@ https://wiki.archlinux.org/index.php/Udisks#udisks2:_mount_to_.2Fmedia
 ENV{ID_FS_USAGE}=="filesystem|other|crypto", ENV{UDISKS_FILESYSTEM_SHARED}="1"' >> /etc/udev/rules.d/99-udisks2.rules```
 
 then add devmon to autostart on kde system settings
+
+## automount nfs folder (eg. from NAS)
+https://wiki.manjaro.org/index.php?title=Fstab_-_Use_SystemD_automount
+https://wiki.archlinux.org/index.php/NFS#Mount_using_.2Fetc.2Ffstab_with_systemd
+
+ 
+if you need to mount webdav share
+```sudo pacman -S davfs2```
 
 ## LAMP
 https://wiki.archlinux.org/index.php/LAMP
@@ -134,8 +141,8 @@ sudo chmod -R g+w /usr/lib/drush
 
 ## Markdown
 ```yaourt -s haroopad```      
-```yaourt -S retext python-markdown```     
-```yaourt -s remarkable```        
+or ```yaourt -S retext python-markdown```     
+or ```yaourt -s remarkable```        
 
 ## sublimetext 3 (dev)
 ```yaourt -S sublime-text-dev```
@@ -171,7 +178,6 @@ to keep all your passwords safe and share your liste with all your devices throu
 sudo pacman -S keepass
 ```
 
-
 ## filezilla
 i share filezilla sites librarie with owncloud
 ```
@@ -179,10 +185,9 @@ sudo pacman -S filezilla
 ```
 
 ## boabab
-you can use ```du``` to display folder size or you can use baobab
-```
-sudo pacman -S baobab
-```
+you can use ```du``` to display folder size
+Manjaro come with filelight installed
+an other option is baobab
 
 ## notes
 http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
