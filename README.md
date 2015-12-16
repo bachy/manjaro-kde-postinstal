@@ -1,19 +1,11 @@
-# Gigabyte P34G V2 manjaro postinstall
+# Gigabyte P34W V4 manjaro KDE 64 postinstall
 
-post installation actions after installing manjaro kde in a Gigabyte P34G v2 i7 GTX860m laptop
+post installation actions after installing manjaro kde in a Gigabyte P34W v4 i7 GTX970m laptop
 
 ## install
-install went well, restarted nicely on fresh system.   
-But things went wrong when i had to update the 564 packages out of date
-my live image was http://downloads.sourceforge.net/manjarolinux/manjaro-kde-0.8.10-x86_64.iso
-there were a lot of changes, particularly on graphic card drivers    
-here is my post on manjaro forum : https://forum.manjaro.org/index.php?topic=16504.0    
-i had a new problem with GPU drivers after system update :( https://forum.manjaro.org/index.php?topic=19941.0
+install went well, restarted nicely on fresh system.
 
-## update
-```sudo pacman -S pacman```
-```sudo pacman -S manjaro-system```
-```sudo pacman -Syyu```
+following are some links about what the post-install.sh script do
 
 ## gpg encrypting key
 setup a gpg encripting key to be able to use kwallet
@@ -23,60 +15,15 @@ https://wiki.archlinux.org/index.php/GnuPG
 ask for editing config file before build
 ```echo "EDITFILES=1" >> ~/.yaourtrc```
 
-## console
-### terminator
-```sudo pacman -S terminator```
-### konsole
-http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
-
-## Bash tricks
-```
-echo 'set show-all-if-ambiguous on' >> ~/.inputrc
-echo 'set completion-ignore-case on' >> ~/.inputrc
-```
-
-## Git completion
-```
-sudo pacman -S bash-completion
-sudo wget -O /etc/bash_completion.d/git-completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-```
-
-## vim
+## Vim
 ```sudo pacman -S gvim```
 https://wiki.archlinux.org/index.php/Vim/.vimrc
 
-## basique softwares
-```sudo pacman -S kdeutils-kwalletmanager chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist bash-completion htop knockd```
-
-## touchpad
-I had some problems at the begining with the Elantech touch pad, it was just invisible/deactivated/nothere ...       
-but after a real shutdown, unpleged power and wait for more than 60 seconds then restart the computer, it was finally back      
-https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation       
-
-manage your touchpad from kde      
-```sudo pacman -S kcm-touchpad```
-
-## bluetooth
-manage your bluetooth devices from kde
-... sudo pacman -S bluedevil ...
-
 ## apple magicmouse
 http://askubuntu.com/questions/261791/how-to-set-the-scroll-speed-of-apple-magic-mouse
-```
-sudo rmmod hid_magicmouse
-cat 'options hid_magicmouse scroll-speed=55 scroll-acceleration=1 emulate_2button=1 emulate_3button=1' > /etc/modprobe.d/magicmouse.conf
-sudo modprobe hid_magicmouse
-```
 
 ## nvidia gpu
-```sudo systemctl enable bumblebee```
 https://wiki.archlinux.org/index.php/Bumblebee
-
-## owncloud
-```yaourt -S owncloud-client```
-
-## dropbox
-```yaourt -S dropbox```
 
 ## automount external usb storage   
 https://wiki.archlinux.org/index.php/Udisks#Mount_helpers   
@@ -96,7 +43,7 @@ then add devmon to autostart on kde system settings
 https://wiki.manjaro.org/index.php?title=Fstab_-_Use_SystemD_automount
 https://wiki.archlinux.org/index.php/NFS#Mount_using_.2Fetc.2Ffstab_with_systemd
 
- 
+
 if you need to mount webdav share
 ```sudo pacman -S davfs2```
 
@@ -139,15 +86,6 @@ sudo chown -R root:users /usr/lib/drush
 sudo chmod -R g+w /usr/lib/drush
 ```
 
-## Markdown
-```yaourt -s haroopad```      
-or ```yaourt -S retext python-markdown```     
-or ```yaourt -s remarkable```        
-
-## sublimetext 3 (dev)
-```yaourt -S sublime-text-dev```
-then install package control
-
 ## atom-editor
 ```
 yaourt -S atom-editor
@@ -168,54 +106,6 @@ sudo systemctl restart NetworkManager
 disable wifi and bluetooth on startup on battery   
 https://wiki.archlinux.org/index.php/TLP#Configuration
 
-## syncthing
-```
-sudo pacman -S syncthing syncthing-gtk
-```
-### keepass
-to keep all your passwords safe and share your liste with all your devices through syncthing
-```
-sudo pacman -S keepass
-```
-
-## filezilla
-i share filezilla sites librarie with owncloud
-```
-sudo pacman -S filezilla
-```
-
-## boabab
-you can use ```du``` to display folder size
-Manjaro come with filelight installed
-an other option is baobab
-
 ## notes
 http://forum.notebookreview.com/gigabyte/720497-gigabyte-p34g-print.html
 http://forum.notebookreview.com/gigabyte/746798-gigabyte-p34g-linux.html
-
-## misc
-autojump
-basket ??
-cgit
-choqok for twitter
-clamav
-clonezilla
-deja-dup
-emerillon
-fdupes
-fontforge
-grsync
-httperf
-innotop
-keepnote
-krename
-ksshaskpass
-rsnapshot
-skrooge
-smb4k
-spectrwm
-subtle
-tig
-xdebug
-xtrabackup
-zim
