@@ -13,7 +13,7 @@ https://wiki.archlinux.org/index.php/GnuPG
 
 ## Yaourt
 ask for editing config file before build
-```echo "EDITFILES=1" >> ~/.yaourtrc```
+```echo "EDITFILES=1" >> ~/.yaourtrc```   
 
 ## Vim
 ```sudo pacman -S gvim```
@@ -66,9 +66,8 @@ http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3
 
 ### Mysql
 Mysql is already installed with KDE (used by akonady server)       
-dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me        
 https://wiki.archlinux.org/index.php/MySQL
-install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin      
+phpmyadmin https://wiki.archlinux.org/index.php/PhpMyAdmin      
 mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs        
 on /etc/mysql/my.conf edit the max_allowed_packet property to avoid the 2006 error and comment the log-bin=mysql-bin
 

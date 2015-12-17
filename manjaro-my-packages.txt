@@ -16,16 +16,12 @@ digikam
 drush
 filezilla
 firefox-firebug
-firefox-kde
-firefox-kde-i18n-en-us
-firefox-kde-i18n-fr
 gimp
 git
 google-chrome
 htop
 inkscape
-jdk7-openjdk 7.u91_2.6.3-1
-jdk8-openjdk
+jdk7-openjdk
 kcalc
 kdepim-kaddressbook
 kdepim-kalarm
@@ -42,7 +38,6 @@ openssh
 openvpn
 networkmanager-openvpn
 owncloud-client
-pacman-color
 pavucontrol
 php
 php-apache
@@ -52,7 +47,6 @@ phpmyadmin
 pidgin
 pidgin-indicator
 rsnapshot
-rsync
 scribus
 spamassassin
 syncthing
